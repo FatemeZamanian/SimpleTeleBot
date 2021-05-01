@@ -18,7 +18,7 @@ def wlc(message):
 def guess(message):
     global r,c
     if message.text=='شروع بازي جديد😁':
-        bot.send_message(message.chat.id,'عدد جديد رو حدس بزن')
+        bot.send_message(message.chat.id,'عدد جديد رو حدس بزن(بين 1 تا 30)')
         new_game()
     else:
         mr=int(message.text)
@@ -30,11 +30,11 @@ def guess(message):
                 new_game()
             elif r>mr:
                 bot.send_message(message.chat.id,'عدد بيشتري وارد كن👆')
-                bot.send_message(message.chat.id,'تعداد حدس هاي باقي مونده:'+str(c))
+                bot.send_message(message.chat.id,'تعداد حدس هاي باقي مونده:'+str(c*'💙'))
             elif r<mr:
                 bot.send_message(message.chat.id,'عدد كمتري وارد كن👇')
 
-                bot.send_message(message.chat.id,'تعداد حدس هاي باقي مونده:'+str(c))
+                bot.send_message(message.chat.id,'تعداد حدس هاي باقي مونده:'+str(c*'💙'))
         else:
             bot.send_message(message.chat.id,'باختي كه😒يه بازي ديگه شروع كن')
             bot.send_message(message.chat.id,'عدد جديد رو حدس بزن')

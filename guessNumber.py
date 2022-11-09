@@ -2,7 +2,7 @@ import telebot
 import random
 global c,r
 c=5
-bot=telebot.TeleBot('1776106722:AAESboQEm2OMFXjOe9G-z3Qbn8hKRpxTEpA')
+bot=telebot.TeleBot('Token')
 btns=telebot.types.ReplyKeyboardMarkup(row_width=1)
 btn1=telebot.types.KeyboardButton('شروع بازي جديد😁')
 btns.add(btn1)
